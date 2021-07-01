@@ -1,38 +1,164 @@
-.App {
+* {
+  font-family: "Trebuchet MS", Verdana, Tahoma, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 99vw;
+  max-width: 99vw;
+}
+
+.navbar {
+  background-color: #1e9da1;
+  width: 200px;
+}
+
+.navbar > ul {
+  margin-top: 150px;
+  position: fixed;
+}
+
+.navbar ul li a {
   text-align: center;
+  font-size: 22px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main {
   display: flex;
   flex-direction: column;
+}
+
+.header {
+  margin: 40px 80px;
+}
+
+.header h1 {
+  font-size: 5em;
+}
+.header h3 {
+  font-size: 1.4em;
+}
+
+.firstName {
+  color: rgba(54, 56, 56, 0.719);
+}
+
+.lastName {
+  color: #1e9da1;
+}
+
+.personalInfo {
+  padding: 10px 0px;
+}
+.personalInfo a {
+  color: rgba(48, 48, 51, 0.747);
+  text-decoration: none;
+  margin: 0px 5px;
+}
+
+.intro {
+  font-size: larger;
+  color: rgba(54, 56, 56, 0.719);
+}
+
+.align {
+  margin: 0px 80px;
+}
+.flex_direction_row {
+  display: flex;
+  flex-direction: row;
+}
+
+.media {
+  width: 60px;
+  height: 60px;
+  margin: 0 5px;
+}
+
+.media a {
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.media img {
+  width: 50px;
+  filter: grayscale(100%);
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+@keyframes iconColor {
   from {
-    transform: rotate(0deg);
+    filter: grayscale(100%);
   }
   to {
-    transform: rotate(360deg);
+    filter: grayscale(0%);
+  }
+}
+
+.media a img:hover {
+  animation-name: iconColor;
+  animation-duration: 1s;
+}
+.media a img:active {
+  animation-name: iconColor;
+  animation-duration: 0.5s;
+}
+
+.pageHeader {
+  font-size: 3.1em;
+  font-weight: 600;
+  color: rgba(54, 56, 56, 0.719);
+}
+
+.projectsHeader {
+  font-size: 2em;
+  color: rgba(54, 56, 56, 0.719);
+}
+
+.projectsHeader2 {
+  font-size: 1.4em;
+  color: rgba(54, 56, 56, 0.719);
+  margin-left: 25px;
+}
+
+.picamulator {
+  min-width: 350px;
+  width: auto;
+  height: 200px;
+  background-color: black;
+}
+
+.projectHolder {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.qualities_list {
+  margin: 10px 20px;
+  list-style: url(./icons/check-circle.svg);
+}
+
+.programming_icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.programming_icons div img {
+  height: 80px;
+  margin: 0 5px;
+  filter: grayscale(100%);
+}
+
+.programming_icons div img:hover {
+  animation-name: iconColor;
+  animation-duration: 0.3s;
+  animation-fill-mode: both;
+}
+
+@media screen and (max-width: 992px) {
+  .main {
+    background-color: red;
   }
 }
