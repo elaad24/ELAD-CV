@@ -19,9 +19,14 @@ body {
   position: fixed;
 }
 
-.navbar ul li a {
+.navbar > ul > li > a {
   text-align: center;
   font-size: 22px;
+}
+
+.text {
+  color: black;
+  background-color: black;
 }
 
 .main {

@@ -2,10 +2,10 @@ import React from "react";
 
 const Army = () => {
   return (
-    <div className="align">
+    <div className="align" id="army" name="army">
       <h1 className="pageHeader">ARMY</h1>
       <div>
-        <p>
+        <div>
           <b>March 2017 - November 2019</b>
           <br />
           <p className="intro ">
@@ -34,7 +34,7 @@ const Army = () => {
               working with various interfaces
             </li>
           </ul>
-        </p>
+        </div>
       </div>
       <hr />
     </div>

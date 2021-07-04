@@ -2,13 +2,17 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="header">
+    <div className="header" id="about" name="about">
       <h1>
         <span className="firstName"> ELAD</span>{" "}
         <span className="lastName">DADON</span>{" "}
       </h1>
       <h3 className="personalInfo">
-        <a href="https://goo.gl/maps/hAudY1zPTeGT53nBA" target="_blank">
+        <a
+          href="https://goo.gl/maps/hAudY1zPTeGT53nBA"
+          target="_blank"
+          rel="noreferrer"
+        >
           Israel-Rishon LeZion
         </a>
         <a href="tel:+97224893127">+972 24893127 </a>

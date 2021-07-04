@@ -17,17 +17,17 @@ import Node from "../icons/nodejs.png";
 
 const Qualities = () => {
   return (
-    <div className="align">
+    <div className="align" id="qualities" name="qualities">
       <h1 className="pageHeader">QUALITIES</h1>
       <div className="mb-5">
-        <p>
+        <div>
           <ul className="qualities_list">
             <li>Energetic, Motivator</li>
             <li>Team player, All-around player</li>
             <li>Loyal and responsible</li>
             <li>Fantastic human relations.</li>
           </ul>
-        </p>
+        </div>
       </div>
       <div className="">
         <p className="intro ">PROGRAMMING LANGUAGES & TOOLS</p>

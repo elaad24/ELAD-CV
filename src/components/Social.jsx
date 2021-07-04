@@ -6,7 +6,12 @@ const Social = () => {
     <div className="align">
       <div className="flex_direction_row">
         <div className="media">
-          <a href="http://www.github.com/elaad24" className="" target="_blank">
+          <a
+            href="http://www.github.com/elaad24"
+            className=""
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src={Github} alt="" />
           </a>
         </div>
@@ -15,6 +20,7 @@ const Social = () => {
             href="http://www.linkedin.com/in/elad-dadon-62772a1b3.com"
             className=""
             target="_blank"
+            rel="noreferrer"
           >
             <img src={Linkdin} alt="" />
           </a>
