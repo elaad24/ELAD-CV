@@ -9,8 +9,8 @@ import Army from "./components/Army";
 import Qualities from "./components/Qualities";
 function App() {
   return (
-    <div className="body d-flex  ">
-      <Nav />
+    <div className="body  ">
+      <NavBar />
       <div className="main">
         <Header />
         <Social />
