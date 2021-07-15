@@ -1,10 +1,8 @@
 import React from "react";
 
-let collapse_div = document.querySelector("#navbarCollapse");
-
 let closeNavbar = (e) => {
   if (e.target.className == "nav-link") {
-    collapse_div.classList.toggle("show");
+    return document.querySelector("#navbarCollapse").classList.toggle("show");
   }
 };
 
