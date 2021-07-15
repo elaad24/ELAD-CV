@@ -15,7 +15,9 @@ const Header = () => {
         >
           Israel-Rishon LeZion
         </a>
+        <br />
         <a href="tel:+97224893127">+972 24893127 </a>
+        <br />
         <a href="mailto:elaad2408@gmail.com">ELAAD2408@GMAIL.COM</a>
       </h3>
 
